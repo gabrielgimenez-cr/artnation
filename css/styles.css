@@ -1,0 +1,1006 @@
+
+/* Reset CSS */
+* {
+    Margin:0;
+    padding:0;
+}
+
+/* Setear tamaño rem=10px (aprox) */
+html{
+    font-size: 62,5%
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+    header{
+    background-color: whitesmoke;
+    height: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    header p{
+        margin-left: 11rem;
+        color: #1B1464;
+        font-size: 1rem;
+    }
+
+    header div{
+        margin-right: 7rem;
+    }
+
+    div img{
+        padding-right: 0.9vw;
+    }
+
+    header div p{
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 0.8rem;
+        font-weight: 300;
+        
+    }
+
+    header div{
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        max-height: 13rem;
+        position: fixed;
+        margin-top: 0.8rem;
+    }
+
+    .redes{
+        max-width: 2.5rem;
+    }
+
+    /* MENU NAVEGACIÓN */
+    nav{
+        position: fixed;
+
+        -webkit-transform: rotate(-90deg);  
+        -moz-transform: rotate(-90deg);  
+        -ms-transform: rotate(-90deg);  
+        -o-transform: rotate(-90deg);  
+        transform: rotate(-90deg);  
+
+        margin-top: 50rem;
+        margin-left: -14rem;
+    }
+
+    ul li{
+        display: inline-block;
+        margin-right: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .destacado{
+        font-size: 1.8rem;
+        font-style: oblique;
+        color: #1E58DE;
+    }
+
+    a{
+        text-decoration: none;
+        color: #2365FF;
+    }
+
+/* MAIN */
+main{
+    margin-right: 7rem;
+    margin-left:11rem;
+}
+
+main section{
+    display: flex;
+}
+     /* Fonts styles */
+    h1{
+        font-size: 10vw;
+        line-height: 10vw;
+        color: #1B1464;
+    }
+
+    h2{
+        font-size: 6vw;
+        line-height: 6vw;
+        color: #1B1464;
+    }
+
+    h3{
+        font-size: 4vw;
+        line-height: 4vw;
+        color: #1B1464;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h4{
+        font-size: 2vw;
+        line-height: 2.4vw;
+        color: #1E58DE;
+    }
+
+    h5{
+        font-size: 2vw;
+        line-height: 2vw;
+        color: #1E58DE;
+    }
+
+    p{
+        font-size: 1.25vw;
+        line-height: 1.75vw;
+        font-weight: 300;
+    }
+
+    .botones{
+        margin-top: 1vw;
+        font-size: 3rem;
+    }
+    .titulo{
+        margin-bottom: 2vw;
+        flex-direction: column;
+    }
+
+    .divisor{
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+
+    .divisor img{
+        width: 100%;
+    }
+
+    .seccionprincipal{
+        margin-bottom: 8vw;
+        column-gap: 4vw;
+        justify-content: space-between;
+    }
+    .seccionprincipal img{
+        width: 100%;
+    }
+
+    .newsletterindex{
+        background-color: #2365ff34;
+        padding: 2vw;
+        flex-basis: 70%;
+    }
+
+
+/* INPUT Newsletter */
+.newsletter{
+    font-size: 1.5rem;
+    color: #1E58DE;
+}
+
+input[type=submit]{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0.1rem solid;
+    color:#1E58DE;
+    height:2rem;
+    width:5rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size:1rem;
+}
+
+input[type=email]{
+    border: 0.1rem solid #2365FF;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 16vw;
+    padding-left: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+/* FOOTER */
+footer{
+    background-color: #1B1464;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    position: relative;
+    z-index:100;
+}
+
+footer section{
+    margin-right: 7rem;
+    margin-left: 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4vw;
+    row-gap: 4vw;
+}
+
+footer section img{
+    max-width: 5rem;
+}
+
+.direccion{
+    display: inline-block;
+    max-width: 15rem;
+    color: #2365FF;
+    font-weight: 300;
+}
+.copy{
+    text-align: center;
+    color: aliceblue;
+    font-weight: 300;
+}
+
+
+/* STORE */
+
+main h1{
+    margin-top: 5vw;
+}
+
+.tipoproductos{
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 6rem;
+    grid-row-gap: 7rem;
+}
+
+.tipoproductos img{
+    width: 100%;
+}
+
+.tipoproductos a{
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    border: 0.1rem solid #1E58DE;
+    color:#2365FF;
+    height: 2rem;
+    width: 5rem;
+}
+
+.tipoproductos p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* PROYECTO */
+.mainproyecto{
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "imagen1 tituloproyecto tituloproyecto"
+    "sobreproyecto imagen2 imagen2";
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+
+/*     justify-content: space-between;
+    align-items: center; */
+}
+
+.imagenproyecto1{
+    grid-area: imagen1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.tituloproyecto{
+    grid-area: tituloproyecto;
+}
+
+.sobreproyecto{
+    grid-area: sobreproyecto;
+    background-color: #2365ff34;
+    padding: 1.3rem;
+}
+
+.imagenproyecto2{
+    grid-area: imagen2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.mainproyecto h1{
+    margin:0%;
+}
+
+
+/* CONTACTO */
+
+.forms{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+section form fieldset{
+    display: block;
+    width: 90%;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    border: 0.1rem solid #1B1464;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #1B1464;
+    background-color: #2365ff34;
+}
+
+.form1{
+    font-size: 1.3rem;
+    color: #1E58DE;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.form1 input{
+    border: 0.1rem solid #2365FF;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.form2{
+    font-size: 1.3rem;
+    color: #1E58DE;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.form2 input{
+    border: 0.1rem solid #2365FF;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    justify-content:space-between ;
+}
+
+.form3{
+    font-size: 1.3rem;
+    color: #1E58DE;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.form3 textarea{
+    width: 100%;
+    height: 14rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #2365FF;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 00.5rem 1rem 0.5rem 1rem;
+}
+
+.form4{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #1E58DE;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.form5{
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+input[type=reset]{
+    background-color: rgba(240, 248, 255, 0);
+    border: 0.1rem solid #1b146400;
+    color:#b1b1b1;
+    height: 2rem;
+    width: 8rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.forms form label{
+    font-size: 1.5rem;
+    color: #1E58DE;
+}
+
+
+/* ARTWORK */
+.bloqueartwork{
+    padding: 3rem;
+    margin-top: 2rem;
+    column-gap: 5rem;
+    background-color: #2365ff34;
+}
+
+.descripciontrabajosdestacados{
+    font-weight: 400;
+}
+
+.bloqueartwork img{
+    width: 100%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+.bloqueultimos div h4{
+    font-size: 3vw;
+    line-height: 3.2vw;
+    padding-bottom: 1.5vw;
+}
+
+.tituloartwork{
+    margin-top: 4vw;
+    margin-bottom: 1rem;
+}
+
+.bloqueartwork p{
+    font-size: 1.5vw;
+    line-height: 1.8vw;
+}
+
+.bloqueultimos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom:7rem;
+    column-gap: 5vw;
+}
+
+.tituloartwork2{
+    margin-top: 7vw;
+}
+
+.bloqueultimos img{
+    width: 100%;
+}
+
+.bloqueultimos div p{
+    font-size: 2vw;
+}
+
+
+
+
+/* RESPONSIVE INDEX */
+
+@media screen and (max-width: 1200px) {
+
+    main{
+        margin-right: 3rem;
+        margin-left:9rem;
+    }
+    header div{
+        margin-right: 3rem;
+    }
+    .seccionprincipal{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        row-gap: 2vw;
+    }
+    footer section{
+        margin-right: 3rem;
+        margin-left: 9rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        justify-content: space-between;
+    }
+    .logofooter{
+        display: none;
+    }
+    header p{
+        margin-left: 9rem;
+    }
+    .logo {
+        max-height: 10rem;
+        margin-top: 0.8rem;
+    }
+    nav{
+        margin-left: -15rem;
+    }
+    input[type=email]{
+        width: 45vw;
+    }
+    .botones{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        margin-right: 3rem;
+        margin-left:8rem;
+    }
+    footer section{
+        margin-left: 8rem;
+    }
+    header p{
+        margin-left: 8rem;
+        line-height: 2.4vw;
+    }
+    input[type=email]{
+        width: 30vw;
+    }
+    .botones{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        -webkit-transform: none;  
+        -moz-transform: none; 
+        -ms-transform: none; 
+        -o-transform: none; 
+        transform: none; 
+
+        margin-top: 7rem;
+        margin-left: 6rem;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    nav ul li{
+        font-size: 3.5vw;
+        line-height: 3.7vw;
+    }
+
+    .destacado{
+        font-size: 1.4rem;
+    }
+
+    main{
+        margin-left:3rem;
+        padding-top: 15rem;
+    }
+    .logo {
+        max-height: 7rem;
+        margin-top: 0rem;
+    }
+    header{
+        background-color: #d9e4fe;
+        position: fixed;
+        width: 100%;
+        padding-top: 0rem;
+        margin-top: 0rem;
+        display: flex;
+        justify-content: space-between;
+        }
+    header p{
+        margin-left: 6rem;
+        font-size: 2.5vw;
+        line-height: 2.8vw;
+        }
+    footer section{
+            margin-left: 3rem;
+        }
+    .botones{
+        font-size: 1.25rem;
+        }
+    input[type=submit]{
+        height:1.9rem;
+        width:6rem;
+        font-size:0.9rem;
+    }
+    input[type=email]{
+        border: 0.1rem solid #2365FF;
+        border-radius: 1rem;
+        height: 2rem;
+        width: 25vw;
+        padding-left: 1rem;
+        font-size: 0.6rem;
+    }
+    .newsletter{
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+    .seccionprincipal{
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    main{
+        margin-left:2rem;
+        margin-right: 2rem;
+        padding-top: 15rem;
+    }
+    footer section{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    h1{
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+    h3{
+        font-size: 7vw;
+        line-height: 7vw;
+    }
+    header div img{
+        height: 1.8rem;
+    }
+    nav ul li{
+        font-size: 5vw;
+        line-height: 5.2vw;
+    }
+    input[type=submit]{
+        height:1.4rem;
+        width:4rem;
+        font-size:0.8rem;
+    }
+    input[type=email]{
+        border: 0.1rem solid #2365FF;
+        border-radius: 1rem;
+        height: 1.5rem;
+        width: 30vw;
+        padding-left: 1rem;
+        font-size: 0.6rem;
+    }
+    .newsletter{
+        padding-bottom: 1.5rem;
+    }
+    header div{
+        width: fit-content;
+    }
+}
+
+
+
+/* RESPONSIVE STORE*/
+
+@media screen and (max-width: 1200px){
+    .tipoproductos{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 6vw;
+        grid-row-gap: 5vw;
+    }
+    .tipoproductos p{
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .tipoproductos p{
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+    .tipoproductos{
+        grid-row-gap: 3vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .tipoproductos{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 5vw;
+    }
+    .tipoproductos p{
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    header div p{
+        display: none;
+    }
+    .destacado{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .destacado{
+        font-size: 6vw;
+    }
+    .tipoproductos p{
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+}
+
+@media screen and (max-width: 300px){
+    header div{
+        display: none;
+    }
+    header{
+        height: 10rem;
+    }
+    nav {
+        margin-top: 5rem;
+    }
+    main{
+        padding-top: 11rem;
+    }
+}
+
+
+
+/* RESPONSIVE ARTWORK*/
+
+@media screen and (max-width: 800px){
+    .bloqueartwork {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 6vw;
+    }
+    .bloqueultimos{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        row-gap: 4vw;
+        margin-bottom: 0rem;
+        margin-top: 0rem;
+        align-items: stretch;
+    }
+    .bloqueultimos div h4{
+        font-size: 3vw;
+    }
+    .bloqueultimos div p{
+        font-size: 2vw;
+    }
+    .bloqueartwork{
+        padding: 3vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        column-gap: 5vw;
+    }
+    .bloqueartwork p{
+        font-size: 2vw;
+        line-height: 2.3vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bloqueultimos div h4{
+        font-size: 4vw;
+        line-height: 4.3vw;
+    }
+    .bloqueultimos div p{
+        font-size: 3vw;
+        line-height: 3.2vw;
+    }
+    .bloqueartwork p{
+        font-size: 2.4vw;
+        line-height: 2.9vw;
+    }
+    .bloqueartwork div h5{
+        font-size: 3vw;
+        line-height: 3.4vw;
+    }
+    .descripciontrabajosdestacados{
+        font-size: 4vw;
+        line-height: 4.3vw;
+    }
+    .tituloartwork2{
+        font-size: 5vw;
+        line-height: 5.2vw;
+        padding-top: 5vw;
+    }
+    .bloqueultimos{
+        margin-bottom: 12vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .bloqueultimos div h4{
+        font-size: 5vw;
+        line-height: 5.3vw;
+    }
+    .bloqueultimos div p{
+        font-size: 4vw;
+        line-height: 4.2vw;
+    }
+    .bloqueartwork p{
+        font-size: 3.4vw;
+        line-height: 3.9vw;
+    }
+    .bloqueartwork div h5{
+        font-size: 4vw;
+        line-height: 4.4vw;
+    }
+    .descripciontrabajosdestacados{
+        font-size: 5vw;
+        line-height: 5.3vw;
+    }
+    .tituloartwork2{
+        font-size: 6vw;
+        line-height: 6.2vw;
+        padding-top: 5vw;
+    }
+}
+
+
+
+/* RESPONSIVE PROYECTO */
+
+@media screen and (max-width: 1200px){
+    .mainproyecto {
+        margin-top: 2vw;
+        margin-bottom: 5vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "imagen1 tituloproyecto tituloproyecto"
+        "imagen1 sobreproyecto sobreproyecto"
+        "imagen1 imagen2 imagen2";
+        padding-top: 4vw;
+        padding-bottom: 5vw;
+    }
+    .imagenproyecto2{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .tituloproyecto{
+        font-size: 6vw;
+        line-height: 6.3vw;
+    }
+    .sobreproyecto{
+        font-size: 5vw;
+        line-height: 5.2vw;
+    }
+    .sobreproyecto p{
+        font-size: 2vw;
+        line-height: 2.3vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .sobreproyecto h4{
+        font-size: 3vw;
+        line-height: 3.3vw;
+    }
+
+}
+
+
+@media screen and (max-width: 800px){
+    .mainproyecto {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3fr 0.5fr 5fr;
+        grid-template-areas: 
+        "imagen1 imagen1 imagen1"
+        "tituloproyecto tituloproyecto tituloproyecto"
+        "imagen2 sobreproyecto sobreproyecto";
+    }
+}
+
+@media screen and (max-width: 600px){
+    .mainproyecto {
+        grid-template-columns: 1fr;
+        grid-template-rows:auto;
+        grid-template-areas: 
+        "imagen1"
+        "tituloproyecto"
+        "sobreproyecto"
+        "imagen2";
+        row-gap: 8vw;
+        padding-top: 18rem;
+        padding-bottom: 5rem;
+        margin-top: 0rem;
+    }
+    .tituloproyecto{
+        font-size: 7vw;
+        line-height: 7.3vw;
+    }
+    
+    .sobreproyecto h4{
+        font-size: 4vw;
+        line-height: 4.3vw;
+    }
+    .sobreproyecto p{
+        font-size: 2.5vw;
+        line-height: 2.8vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .mainproyecto {
+        padding-top: 17rem;
+        padding-bottom: 3rem;
+    }
+    .tituloproyecto{
+        font-size: 8vw;
+        line-height: 8.3vw;
+    }
+    
+    .sobreproyecto h4{
+        font-size: 5vw;
+        line-height: 5.3vw;
+    }
+    .sobreproyecto p{
+        font-size: 4vw;
+        line-height: 4.3vw;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .mainproyecto {
+        padding-top: 12rem;
+        padding-bottom: 3rem;
+    }
+}
+
+
+
+/* RESPONSIVE CONTACTO */
+
+@media screen and (max-width: 1200px){
+    .forms{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 4rem;
+        padding-bottom:5rem;
+        row-gap: 4vw;
+    }   
+    section form fieldset{
+        width: auto;
+    }
+    
+    .form2{
+        font-size: 1.3rem;
+        color: #1E58DE;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+    
+    .form2 input{
+        width: 100%;
+    }
+    .formularioprincipal fieldset div label{
+        font-size:2.5vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .formularioprincipal fieldset div label{
+        font-size:4vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .formularioprincipal fieldset div label{
+        font-size:5vw;
+    }
+}
