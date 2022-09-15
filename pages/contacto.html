@@ -13,6 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">       
+
+        <!-- ANIMATE -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    
+        <!-- AOS Animaciones -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
 </head>
 
 <body>
@@ -39,7 +50,7 @@
     </header>
 
     <main>
-        <h1>Acá va un mensaje invitando a contactar</h1>
+        <h1 class="animate__animated animate__pulse">Acá va un mensaje invitando a contactar</h1>
 
         <section class="forms">
         <form action="">
@@ -49,7 +60,7 @@
             <input type="submit" value="Enviar">
         </form>
     
-        <form class="formularioprincipal" action="">
+        <form class="formularioprincipal" data-aos="fade-down-left action="">
             <fieldset>
                 <legend>Dejá tu mensaje</legend>
 
@@ -83,7 +94,7 @@
 
     </main>
 
-    <footer>
+    <footer data-aos="zoom-out-up">
         <section>
             <div>
                 <a href="http://www.facebook.com" target="_blank"><img class="redes" src="../media/png/facebook.png" alt="facebook" title="Facebook"></a>
@@ -100,6 +111,11 @@
         </section>
         
     </footer>
+
+    <!-- AOS Animaciones -->
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

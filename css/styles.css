@@ -589,13 +589,15 @@ input[type=reset]{
     }
     header{
         background-color: #d9e4fe;
-        position: fixed;
+        position:fixed;
         width: 100%;
         padding-top: 0rem;
         margin-top: 0rem;
         display: flex;
         justify-content: space-between;
         }
+
+
     header p{
         margin-left: 6rem;
         font-size: 2.5vw;
@@ -1003,4 +1005,66 @@ input[type=reset]{
     .formularioprincipal fieldset div label{
         font-size:5vw;
     }
+}
+
+
+
+/* ANIMACIONES INDEX*/
+li a{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+} 
+li a:hover{
+    color: #1B1464;
+    font-size: 120%;
+}
+
+.redes{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.redes:hover{
+    opacity: 60%;
+    transform: scale(1.1,1.1);
+}
+
+.titulo a{
+    transition: 0.5s;
+}
+
+.titulo a:hover{
+    color:#2365FF;
+    border-radius: 2rem;
+    height: fit-content;
+    width: fit-content;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.tipoproductos a{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+}
+
+.tipoproductos a:hover{
+    border-radius: 2rem;
+    height: fit-content;
+    width: fit-content;
+    font-size: 120%;
+}
+
+p a:hover{
+    color: #1B1464;
+    font-weight: 500;
+}
+
+.logo{
+    transition: 2s;
+}
+.logo:hover{
+    transform: scale(1.1,1.1);
 }
