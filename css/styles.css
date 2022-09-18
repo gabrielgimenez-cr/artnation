@@ -21,6 +21,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
     }
 
     header p{
@@ -57,8 +58,10 @@ body{
     }
 
     .redes{
-        max-width: 2.5rem;
+        height: 4vw;
+        align-items: center;
     }
+
 
     /* MENU NAVEGACIÓN */
     nav{
@@ -213,29 +216,36 @@ footer{
 }
 
 footer section{
-    margin-right: 7rem;
+    padding-right: 7rem;
     margin-left: 11rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     justify-content: space-between;
-    column-gap: 4vw;
-    row-gap: 4vw;
+    column-gap: 3rem;
+    row-gap: 2rem;
 }
 
 footer section img{
-    max-width: 5rem;
+    height: 6vw;
 }
 
 .direccion{
-    display: inline-block;
-    max-width: 15rem;
     color: #2365FF;
     font-weight: 300;
+    font-size: 0.9rem;
 }
 .copy{
-    text-align: center;
     color: aliceblue;
     font-weight: 300;
+    font-size: 0.8rem;
+    align-self: center;
+}
+.datosfooter{
+    display: grid;
+    grid-template-columns: auto 2fr;
+    align-self: center;
+    align-items: center;
 }
 
 
@@ -574,6 +584,7 @@ input[type=reset]{
         font-size: 3.5vw;
         line-height: 3.7vw;
     }
+
 
     .destacado{
         font-size: 1.4rem;
@@ -1009,7 +1020,7 @@ input[type=reset]{
 
 
 
-/* ANIMACIONES INDEX*/
+/* ANIMACIONES*/
 li a{
     width: 100%;
     height: 100%;
@@ -1021,8 +1032,6 @@ li a:hover{
 }
 
 .redes{
-    width: 100%;
-    height: 100%;
     transition: 1s;
 }
 
@@ -1067,4 +1076,9 @@ p a:hover{
 }
 .logo:hover{
     transform: scale(1.1,1.1);
+}
+
+
+body{
+    cursor: #ec0606;
 }
