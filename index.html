@@ -51,6 +51,23 @@
             </ul>
         </nav>
 
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page"  href="../index.html">Home</a>
+                <a class="nav-link" href="pages/proyecto.html">Proyecto</a>
+                <a class="nav-link" href="pages/artworks.html">Artworks</a>
+                <a class="nav-link" href="pages/store.html">Store</a>
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+
     </header>
 
     <main>
@@ -61,8 +78,21 @@
 
     <div class="divisor">
         <h3>Últimos trabajos</h3>
-        <img src="media/jpg/imagen1.jpg" alt="imagen1" title="imagen1"> <!-- este será un slider con últimos trabajos -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="media/jpg/imagen1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="media/jpg/imagen2.jpg"  class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="media/jpg/imagen3.jpg"  class="d-block w-100" alt="...">
+            </div>
+            </div>
+        </div>
     </div>
+    
 
     <section class="seccionprincipal">
         <div class="newsletterindex" data-aos="fade-up-right">
@@ -76,7 +106,32 @@
 
         <div data-aos="flip-down">
             <h3>Nuevos productos</h3>
-            <img src="media/jpg/imagen1.jpg" alt="imagen1" title="imagen1"> <!-- este será un slider con nuevos productos-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="media/jpg/imagen1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/jpg/imagen2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="media/jpg/imagen3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
     </section>
 

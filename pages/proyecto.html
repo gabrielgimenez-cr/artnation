@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre Mi</title>
 
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
     <!-- LINK CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -47,9 +51,28 @@
                 <li class="destacado"><b>Proyecto</b></li>
             </ul>
         </nav>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="proyecto.html">Proyecto</a>
+                <a class="nav-link" href="artworks.html">Artworks</a>
+                <a class="nav-link" href="store.html">Store</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+
     </header>
     
-    <main class="mainproyecto">
+    <main>
+        <div class="mainproyecto">
         <img src="../media/jpg/imagen1.jpg" alt="image1" title="image1" class="imagenproyecto1 animate__animated animate__fadeIn">
         <h1 class="tituloproyecto animate__animated animate__pulse">Aquí va un titulo llamativo</h1>
         <div class="sobreproyecto">
@@ -58,6 +81,37 @@
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
         </div>
         <img src="../media/jpg/imagen1.jpg" alt="image1" title="image1" class="imagenproyecto2">
+        </div>
+
+        <div class="contactoproyecto">
+        <form class="formularioprincipal" data-aos="fade-down-left action=">
+            <h3>Quiero saber más</h3>
+                <div class="form1">
+                <label for="Nombre" >Nombre y Apellido</label>
+                <input type="text" name="Nombre">
+                </div>   
+                
+                <div class="form2">   
+                <label for="Correo">Correo</label>
+                <input type="email" name="Correo">
+                </div>
+
+                <div class="form3">
+                <label for="Mensaje">Mensaje</label>
+                <textarea name="Mensaje" cols="20" rows="10"></textarea>
+                </div>
+
+                <div class="form4">
+                    <label><input type="checkbox" value="1" name="">Acepto recibir email con novedades</label>
+                    <label><input type="checkbox" value="2" name="" >Suscribirme a Newsletter</label>
+                </div>
+
+                <div class="form5">
+                <input type="submit" value="Enviar">
+                <input type="reset" value=">Reestablecer">
+                </div>
+        </form>
+        </div>
     </main>
 
     <footer>
@@ -80,7 +134,10 @@
         <!-- AOS Animaciones -->
         <script>
             AOS.init();
-        </script>
+        </script>   
+        
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
 </body>
 </html>

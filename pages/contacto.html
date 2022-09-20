@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
     <!-- LINK CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -47,20 +51,43 @@
                 <li><a href="../pages/proyecto.html">Proyecto</a></li>
             </ul>
         </nav>
+
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="proyecto.html">Proyecto</a>
+                <a class="nav-link" href="artworks.html">Artworks</a>
+                <a class="nav-link" href="store.html">Store</a>
+                <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            </div>
+        </nav>
+
     </header>
 
     <main>
         <h1 class="animate__animated animate__pulse">Acá va un mensaje invitando a contactar</h1>
 
         <section class="forms">
-        <form action="">
+        <div>
+            <form action="">
             <h3>Mensaje invitando a suscribirse a newsletter de novedades</h3>
             <label for="Correo">Correo</label>
             <input type="email" name="Correo">
             <input type="submit" value="Enviar">
-        </form>
+            </form>
+        
+            <iframe src="https://www.google.com/maps/d/embed?mid=1o3q4GYsxgUk3udEpH1lYNFVwibD6xtc&hl=es&ehbc=2E312F" width="100%" height="400px"></iframe>
+            
+        </div>
     
-        <form class="formularioprincipal" data-aos="fade-down-left action="">
+        <form class="formularioprincipal" data-aos="fade-down-left action=">
             <fieldset>
                 <legend>Dejá tu mensaje</legend>
 
@@ -115,6 +142,10 @@
     <script>
         AOS.init();
     </script>
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

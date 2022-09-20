@@ -61,7 +61,10 @@ body{
         height: 4vw;
         align-items: center;
     }
-
+    
+    .navbar{
+        display: none;
+    }
 
     /* MENU NAVEGACIÓN */
     nav{
@@ -175,6 +178,12 @@ main section{
         flex-basis: 70%;
     }
 
+    .carousel-indicators [data-bs-target]{
+        background-color: #1B1464;
+        width: 4rem;
+        height: 0.2rem;
+    }
+
 
 /* INPUT Newsletter */
 .newsletter{
@@ -257,12 +266,12 @@ main h1{
 
 .tipoproductos{
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 6rem;
-    grid-row-gap: 7rem;
+    grid-column-gap: 4rem;
+    grid-row-gap: 5rem;
 }
 
 .tipoproductos img{
@@ -283,11 +292,52 @@ main h1{
     margin-bottom: 1rem;
 }
 
+.acordionstore{
+    padding-bottom: 6rem;
+    background-color: #2365ff34;
+    }
+
+.accordion{
+    margin: 2rem;
+}
+
+.accordion {
+    --bs-accordion-color: #1B1464;
+    --bs-accordion-bg: #fff;
+    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+    --bs-accordion-active-color: #1E58DE;
+    --bs-accordion-active-bg: hsl(0, 0%, 100%);
+    width: 1600px;
+    --bs-accordion-active-bg:#2365ff34;
+}
+
+.accordion-button {
+    font-size: 1.5rem;
+    color: #1B1464;
+}
+
+.accordion-collapse{
+    font-weight: 400;
+}
+
+.comosehacen{
+    background-color:#2365ff34;
+    object-fit: contain;
+}
+
+.comosehacen div{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.comosehacen p{
+    font-weight: 400;
+}
 
 /* PROYECTO */
 .mainproyecto{
     margin-top: 2rem;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
@@ -331,6 +381,14 @@ main h1{
     margin:0%;
 }
 
+.contactoproyecto{
+    padding-bottom: 6rem;
+    background-color: #2365ff34;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
 
 /* CONTACTO */
 
@@ -340,7 +398,7 @@ main h1{
     grid-template-rows: 1fr;
     grid-column-gap: 8rem;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 10rem;
 }
 
@@ -440,6 +498,9 @@ input[type=reset]{
     color: #1E58DE;
 }
 
+.forms iframe{
+    padding-top: 3rem;
+}
 
 /* ARTWORK */
 .bloqueartwork{
@@ -494,6 +555,21 @@ input[type=reset]{
 
 .bloqueultimos div p{
     font-size: 2vw;
+}
+
+#galeria img{
+    width: 100%;
+    height: 100%;
+    
+}
+#galeria{
+    padding: 0px;
+    padding-bottom: 3rem;
+}
+
+#galeria .col-lg-3{
+    padding-bottom: 2rem;
+
 }
 
 
@@ -567,24 +643,8 @@ input[type=reset]{
 
 @media screen and (max-width: 600px){
     nav{
-        -webkit-transform: none;  
-        -moz-transform: none; 
-        -ms-transform: none; 
-        -o-transform: none; 
-        transform: none; 
-
-        margin-top: 7rem;
-        margin-left: 6rem;
+        display: none;
     }
-    nav ul{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    nav ul li{
-        font-size: 3.5vw;
-        line-height: 3.7vw;
-    }
-
 
     .destacado{
         font-size: 1.4rem;
@@ -641,6 +701,11 @@ input[type=reset]{
         padding-top: 5vw;
         padding-bottom: 5vw;
     }
+
+    .redes{
+        height: 1.8rem;
+    }
+
 }
 
 @media screen and (max-width: 400px) {
@@ -734,12 +799,44 @@ input[type=reset]{
         font-size: 3vw;
         line-height: 4vw;
     }
-    header div p{
-        display: none;
-    }
+
     .destacado{
         font-size: 4vw;
     }
+    header div p{
+        display: none;
+    }
+
+    /* ESTILOS MENÚ HAMBURGUESA */
+    .navbar{
+        display: block;
+        position: fixed;
+
+        -webkit-transform: rotate(0deg);  
+        -moz-transform: rotate(0deg);  
+        -ms-transform: rotate(0deg);  
+        -o-transform: rotate(0deg);  
+        transform: rotate(0deg);  
+
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+    .bg-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(35,101,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+    .navbar-toggler {
+        border-color: #1B1464;
+    } 
+    .bg-light {
+        background-color: #d9e4fe !important;
+    }
+
+    .navbar-nav{
+        align-items: flex-start;
+        --bs-navbar-color: #2365FF;
+        --bs-navbar-active-color: #1B1464;
+        font-size: 1rem;
+    } 
 }
 
 @media screen and (max-width: 400px){
@@ -1078,7 +1175,10 @@ p a:hover{
     transform: scale(1.1,1.1);
 }
 
+#galeria img{
+    transition: 1s;
+}
 
-body{
-    cursor: #ec0606;
+#galeria img:hover{
+    transform: scale(1.2,1.2);
 }
