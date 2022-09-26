@@ -1,0 +1,91 @@
+
+body main{
+    margin-right:7rem;
+    margin-left:11rem;
+    padding-top: 4vw;
+    padding-bottom: 8vw;
+    caret-color: map-get($color,secundario);
+}
+
+.mainprincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1 fr 1fr;
+    grid-template-areas:
+    "principal principal"
+    "principal2 principal3";
+    row-gap: 4vw;
+    column-gap: 4vw;
+
+    .seccionprincipal1{
+        grid-area: principal;
+
+        div a{
+            margin-top: 1vw;
+            font-size: 3vw;
+            line-height: 3vw;
+            text-decoration: none;
+            transition: 0.5s;
+
+            &:hover{
+                color:map-get($color, terciario);
+                border-radius: 2rem;
+                height: fit-content;
+                width: fit-content;
+                padding-left: 1vw;
+                padding-right: 1vw;
+            }
+        }
+
+        .divisor{
+            margin-top: 4vw;
+        }
+    }
+}
+
+.newsletterindex{
+    grid-area: principal2;
+    background-color: map-get($color, fondo);
+    padding: 2vw;
+    padding-bottom: 2rem;
+    flex-basis: 70%;
+
+        .newsletter{
+            font-size: 1.5rem;
+            color:map-get($color,secundario);
+            
+                input[type=submit]{
+                    background-color: rgba(240, 248, 255, 0);
+                    border: 0.1rem solid;
+                    color:map-get($color,secundario);
+                    height:2rem;
+                    width:5rem;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-size:1rem;
+                }
+                
+                input[type=email]{
+                    border: 0.1rem solid map-get($color,terciario);
+                    border-radius: 2rem;
+                    height: 2rem;
+                    width: 16rem;
+                    padding-left: 1vw;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1rem;
+                }
+        }
+}
+
+.carruselindex2{
+    grid-area: principal3;
+
+    .carousel-indicators [data-bs-target]{
+        background-color: map-get($color,principal);
+        width: 4rem;
+        height: 0.2rem;
+    }
+}
+

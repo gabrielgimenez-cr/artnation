@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <!-- FONT: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -71,69 +71,76 @@
     </header>
 
     <main>
-    <section class="titulo">
-        <h1 class="animate__animated animate__fadeIn">Acá va un mensaje de bienvenida</h1>
-        <a class="botones" href="pages/artworks.html"> <b>></b>Conocé mi trabajo</a> 
-    </section>
+        <section class="mainprincipal">
+            <section class="seccionprincipal1">
+            <div>
+                <h1 class="animate__animated animate__fadeIn">Acá va un mensaje de bienvenida</h1>
+                <a href="pages/artworks.html"> <b>></b>Conocé mi trabajo</a> 
+            </div>
 
-    <div class="divisor">
-        <h3>Últimos trabajos</h3>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="media/jpg/imagen1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="media/jpg/imagen2.jpg"  class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="media/jpg/imagen3.jpg"  class="d-block w-100" alt="...">
-            </div>
-            </div>
-        </div>
-    </div>
-    
-
-    <section class="seccionprincipal">
-        <div class="newsletterindex" data-aos="fade-up-right">
-            <h3>Mensaje invitando a suscribirse a newsletter de novedades</h3>
-            <form class="newsletter" action="">
-                <label for="Correo">Correo</label>
-                <input type="email" name="Correo" placeholder="meinteresa@enviar.com">
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-
-        <div data-aos="flip-down">
-            <h3>Nuevos productos</h3>
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div class="divisor">
+                <h3>Últimos trabajos</h3>
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="media/jpg/imagen1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/jpg/imagen2.jpg"  class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="media/jpg/imagen3.jpg"  class="d-block w-100" alt="...">
+                    </div>
+                    </div>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+            </div>
+            </section>
+        
+
+            <div class="newsletterindex" data-aos="fade-up-right">
+                <h3>Mensaje invitando a suscribirse a newsletter de novedades</h3>
+                <form class="newsletter" action="">
+                    <label for="Correo">Correo</label>
+                    <input type="email" name="Correo" placeholder="meinteresa@enviar.com">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="carruselindex2" data-aos="flip-down">
+                <h3>Nuevos productos</h3>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
                     <img src="media/jpg/imagen1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
+                    </div>
+
+                    <div class="carousel-item">
                     <img src="media/jpg/imagen2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item">
+                    </div>
+
+                    <div class="carousel-item">
                     <img src="media/jpg/imagen3.jpg" class="d-block w-100" alt="...">
-                  </div>
+                    </div>
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
+
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
-        </div>
-    </section>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -145,11 +152,11 @@
                 <a href="http://www.behance.com" target="_blank"><img class="redes" src="media/png/behance.png" alt="behance" title="Behance"></a>
             </div>
 
-            <h6 class="copy">Gabriel Gimenez 2022 © Todos los derechos reservados</h6>
+            <p class="copy">Gabriel Gimenez 2022 © Todos los derechos reservados</p>
 
             <div class="datosfooter">   
             <img class="logofooter" src="media/png/logoblanco.png" alt="logotipo" title="Logotipo">
-            <h6 class="direccion">Av. Figueroa Alcorta 3415 C1425CLA Buenos Aires, Argentina / Tel. +54 11 4808 6500 / info@artnation.com.ar</h6>
+            <p class="direccion">Av. Figueroa Alcorta 3415 C1425CLA Buenos Aires, Argentina / Tel. +54 11 4808 6500 / info@artnation.com.ar</p>
             </div>
         </section>
     </footer>

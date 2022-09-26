@@ -101,6 +101,7 @@ body{
 main{
     margin-right: 7rem;
     margin-left:11rem;
+    caret-color: #1E58DE;
 }
 
 main section{
@@ -163,12 +164,12 @@ main section{
         width: 100%;
     }
 
-    .seccionprincipal{
+    .seccionprincipal2{
         margin-bottom: 8vw;
         column-gap: 4vw;
         justify-content: space-between;
     }
-    .seccionprincipal img{
+    .seccionprincipal2 img{
         width: 100%;
     }
 
@@ -247,7 +248,8 @@ footer section img{
 .copy{
     color: aliceblue;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.8vw;
+    align-self: center;
     align-self: center;
 }
 .datosfooter{
@@ -577,7 +579,7 @@ input[type=reset]{
 
 /* RESPONSIVE INDEX */
 
-@media screen and (max-width: 1200px) {
+/* @media screen and (max-width: 1200px) {
 
     main{
         margin-right: 3rem;
@@ -752,7 +754,7 @@ input[type=reset]{
     header div{
         width: fit-content;
     }
-}
+} */
 
 
 
@@ -1118,7 +1120,7 @@ input[type=reset]{
 
 
 /* ANIMACIONES*/
-li a{
+/* li a{
     width: 100%;
     height: 100%;
     transition: 1s;
@@ -1149,7 +1151,7 @@ li a:hover{
     padding-left: 1vw;
     padding-right: 1vw;
 }
-
+ */
 .tipoproductos a{
     height: 100%;
     width: 100%;
