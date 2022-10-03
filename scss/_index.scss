@@ -1,10 +1,29 @@
 
-body main{
-    margin-right:7rem;
-    margin-left:11rem;
-    padding-top: 4vw;
-    padding-bottom: 8vw;
-    caret-color: map-get($color,secundario);
+body {
+    background: linear-gradient(-45deg, #cde6feaf, #ffffff, #eaf9ffa0, #fafafa);
+	background-size: 500% 900%;
+	animation: gradient 8s ease infinite;
+	height: 100vh;
+
+    main{
+        margin-right:7rem;
+        margin-left:11rem;
+        padding-top: 4vw;
+        padding-bottom: 8vw;
+        caret-color: map-get($color,secundario);
+    }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .mainprincipal{
@@ -63,6 +82,11 @@ body main{
                     text-decoration: none;
                     font-family: 'Poppins', sans-serif;
                     font-size:1rem;
+                    transition: 1s;
+
+                    &:hover{
+                        border-radius: 1rem;
+                    }
                 }
                 
                 input[type=email]{
@@ -88,4 +112,3 @@ body main{
         height: 0.2rem;
     }
 }
-

@@ -53,37 +53,18 @@ p {
   font-weight: 300;
   color: #1B1464; }
 
-/* ESTILOS MENÚ HAMBURGUESA */
-.navbar {
-  display: block;
-  position: fixed;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  margin-top: 5rem;
-  margin-left: 7rem; }
-  .navbar-nav {
-    align-items: flex-start;
-    --bs-navbar-color: #2365FF;
-    --bs-navbar-active-color: #1B1464;
-    font-size: 1rem; }
-
-.bg-light {
-  background-color: #abc3fc !important; }
-  .bg-light .navbar-toggler {
-    border-color: #1B1464; }
-    .bg-light .navbar-toggler .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(35,101,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
-
 header {
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.3);
   height: 14rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1; }
+  header .logo {
+    transition: 2s; }
+    header .logo:hover {
+      transform: scale(1.1, 1.1);
+      background-image: url(../media/gif/efecto.gif); }
   header p {
     margin-left: 11rem;
     color: #1B1464;
@@ -101,7 +82,11 @@ header {
       display: inline-block;
       margin-right: 2rem;
       font-size: 0.8rem;
-      font-weight: 300; }
+      font-weight: 400;
+      transition: 2s; }
+      header div p:hover {
+        font-weight: 500;
+        font-size: 1rem; }
 
 .logo {
   max-height: 13rem;
@@ -142,10 +127,10 @@ nav {
       nav ul li a:hover {
         color: #1B1464;
         font-size: 120%; }
-    nav ul li .destacado {
-      font-size: 1.8rem;
-      font-style: oblique;
-      color: #2365FF; }
+  nav ul .destacado {
+    font-size: 1.8rem;
+    font-style: oblique;
+    color: #1B1464; }
 
 footer {
   background-color: #1B1464;
@@ -175,12 +160,25 @@ footer {
       footer section .datosfooter .direccion {
         color: #2365FF; }
 
-body main {
-  margin-right: 7rem;
-  margin-left: 11rem;
-  padding-top: 4vw;
-  padding-bottom: 8vw;
-  caret-color: #1E58DE; }
+body {
+  background: linear-gradient(-45deg, #cde6feaf, #ffffff, #eaf9ffa0, #fafafa);
+  background-size: 500% 900%;
+  animation: gradient 8s ease infinite;
+  height: 100vh; }
+  body main {
+    margin-right: 7rem;
+    margin-left: 11rem;
+    padding-top: 4vw;
+    padding-bottom: 8vw;
+    caret-color: #1E58DE; }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
 .mainprincipal {
   display: grid;
@@ -209,7 +207,7 @@ body main {
 
 .newsletterindex {
   grid-area: principal2;
-  background-color: #abc3fc;
+  background-color: #c0d3fe;
   padding: 2vw;
   padding-bottom: 2rem;
   flex-basis: 70%; }
@@ -224,7 +222,10 @@ body main {
       width: 5rem;
       text-decoration: none;
       font-family: 'Poppins', sans-serif;
-      font-size: 1rem; }
+      font-size: 1rem;
+      transition: 1s; }
+      .newsletterindex .newsletter input[type=submit]:hover {
+        border-radius: 1rem; }
     .newsletterindex .newsletter input[type=email] {
       border: 0.1rem solid #2365FF;
       border-radius: 2rem;
@@ -242,6 +243,348 @@ body main {
     background-color: #1B1464;
     width: 4rem;
     height: 0.2rem; }
+
+body a {
+  text-decoration: none; }
+
+body .mainstore {
+  padding-bottom: 0%; }
+
+.tipoproductos {
+  padding-top: 5vw;
+  padding-bottom: 4vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 4vw;
+  grid-row-gap: 3vw; }
+  .tipoproductos img {
+    width: 100%; }
+  .tipoproductos a {
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+    border: 0.1rem solid #1E58DE;
+    color: #2365FF;
+    height: 100%;
+    width: 100%;
+    transition: 1s; }
+    .tipoproductos a:hover {
+      border-radius: 2rem;
+      height: fit-content;
+      width: fit-content;
+      font-size: 120%; }
+  .tipoproductos p {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .tipoproductos .comosehacen {
+    background-color: #c0d3fe;
+    object-fit: contain; }
+    .tipoproductos .comosehacen div {
+      padding-left: 2rem;
+      padding-right: 2rem; }
+    .tipoproductos .comosehacen p {
+      font-weight: 400; }
+
+.acordionstore {
+  padding-bottom: 6rem;
+  background-color: #c0d3fe; }
+  .acordionstore .accordion {
+    margin: 2rem;
+    --bs-accordion-color:map-get($color, principal);
+    --bs-accordion-bg: #fff;
+    --bs-accordion-transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,border-radius 0.15s ease;
+    --bs-accordion-active-color: map-get($color, secundario);
+    --bs-accordion-active-bg: hsl(0, 0%, 100%);
+    --bs-accordion-active-bg:map-get($color, fondo); }
+    .acordionstore .accordion h3 {
+      padding-top: 4vw;
+      padding-bottom: 2vw; }
+    .acordionstore .accordion-button {
+      font-size: 1.5rem;
+      color: #1B1464; }
+    .acordionstore .accordion-collapse {
+      font-weight: 400; }
+    .acordionstore .accordion-body {
+      color: #1B1464; }
+
+body main .tituloartwork {
+  margin-bottom: 1rem; }
+
+body main .descripciontrabajosdestacados {
+  font-weight: 400; }
+
+body main .bloqueartwork {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 3rem;
+  margin-top: 2rem;
+  column-gap: 5rem;
+  background-color: #c0d3fe; }
+  body main .bloqueartwork h5 {
+    font-weight: 500; }
+  body main .bloqueartwork img {
+    width: 100%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    transition: 1s; }
+    body main .bloqueartwork img:hover {
+      transform: scale(1.2, 1.2); }
+  body main .bloqueartwork p {
+    font-size: 1.5vw;
+    line-height: 1.8vw; }
+
+body main .tituloartwork2 {
+  margin-top: 7vw; }
+
+body main .bloqueultimos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  column-gap: 5vw; }
+  body main .bloqueultimos img {
+    width: 100%; }
+  body main .bloqueultimos div p {
+    font-size: 2vw; }
+  body main .bloqueultimos div h4 {
+    font-size: 3vw;
+    line-height: 3.2vw;
+    padding-bottom: 1.5vw; }
+
+body main #galeria {
+  padding: 0px;
+  padding-bottom: 3rem; }
+  body main #galeria img {
+    width: 100%;
+    height: 100%; }
+  body main #galeria .col-lg-3 {
+    padding-bottom: 2rem; }
+
+body main {
+  padding-bottom: 0px; }
+  body main .mainproyecto {
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imagen1 tituloproyecto tituloproyecto" "sobreproyecto imagen2 imagen2";
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem; }
+    body main .mainproyecto .imagenproyecto1, body main .mainproyecto .imagenproyecto2 {
+      grid-area: imagen1;
+      object-fit: cover;
+      width: 100%;
+      height: 100%; }
+    body main .mainproyecto .tituloproyecto {
+      grid-area: tituloproyecto;
+      margin: 0%; }
+    body main .mainproyecto .sobreproyecto {
+      grid-area: sobreproyecto;
+      background-color: #c0d3fe;
+      padding: 1.3rem; }
+    body main .mainproyecto .imagenproyecto2 {
+      grid-area: imagen2; }
+  body main .formproyecto {
+    padding-bottom: 6rem;
+    background-color: #c0d3fe;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem; }
+    body main .formproyecto .formularioprincipal input[type=submit] {
+      background-color: rgba(240, 248, 255, 0);
+      border: 0.1rem solid;
+      color: #1E58DE;
+      height: 2rem;
+      width: 5rem;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      transition: 1s; }
+      body main .formproyecto .formularioprincipal input[type=submit]:hover {
+        border-radius: 1rem; }
+    body main .formproyecto .formularioprincipal label {
+      font-size: 1.5rem;
+      color: #1E58DE; }
+    body main .formproyecto .formularioprincipal .form1, body main .formproyecto .formularioprincipal .form2, body main .formproyecto .formularioprincipal .form3 {
+      font-size: 1.3rem;
+      color: #1E58DE;
+      margin: 1rem 1rem 1rem 1rem; }
+      body main .formproyecto .formularioprincipal .form1 input, body main .formproyecto .formularioprincipal .form2 input, body main .formproyecto .formularioprincipal .form3 input {
+        border: 0.1rem solid #2365FF;
+        border-radius: 2rem;
+        height: 2rem;
+        width: 100%;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        padding-left: 1rem; }
+    body main .formproyecto .formularioprincipal .form2 input {
+      border: 0.1rem solid #2365FF;
+      border-radius: 2rem;
+      height: 2rem;
+      width: 100%;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      justify-content: space-between; }
+    body main .formproyecto .formularioprincipal .form3 textarea {
+      width: 100%;
+      height: 14rem;
+      box-sizing: border-box;
+      border: 0.1rem solid #2365FF;
+      border-radius: 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      padding: 00.5rem 1rem 0.5rem 1rem; }
+    body main .formproyecto .formularioprincipal .form4 {
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      color: #1E58DE;
+      margin: 1rem 1rem 1rem 1rem; }
+      body main .formproyecto .formularioprincipal .form4 label {
+        font-size: 1.2rem;
+        line-height: 1.4rem; }
+    body main .formproyecto .formularioprincipal .form5 {
+      margin: 1rem 1rem 1rem 1rem; }
+    body main .formproyecto .formularioprincipal input[type=reset] {
+      background-color: rgba(240, 248, 255, 0);
+      border: 0.1rem solid #1b146400;
+      color: #1B1464;
+      height: 2rem;
+      width: 8rem;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem; }
+
+body main .forms {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 8rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 10rem; }
+  body main .forms iframe {
+    padding-top: 3rem; }
+  body main .forms form {
+    font-size: 1.5rem;
+    color: #1E58DE; }
+    body main .forms form input[type=submit] {
+      background-color: rgba(240, 248, 255, 0);
+      border: 0.1rem solid;
+      color: #1E58DE;
+      height: 2rem;
+      width: 5rem;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      transition: 1s; }
+      body main .forms form input[type=submit]:hover {
+        border-radius: 1rem; }
+    body main .forms form input[type=email] {
+      border: 0.1rem solid #2365FF;
+      border-radius: 2rem;
+      height: 2rem;
+      width: 16rem;
+      padding-left: 1vw;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem; }
+
+body main .formularioprincipal input[type=submit] {
+  background-color: rgba(240, 248, 255, 0);
+  border: 0.1rem solid;
+  color: #1E58DE;
+  height: 2rem;
+  width: 5rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: 1s; }
+  body main .formularioprincipal input[type=submit]:hover {
+    border-radius: 1rem; }
+
+body main .formularioprincipal label {
+  font-size: 1.5rem;
+  color: #1E58DE; }
+
+body main .formularioprincipal fieldset {
+  display: block;
+  width: 90%;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  border: 0.1rem solid #1B1464;
+  margin-top: 2rem;
+  background-color: #c0d3fe; }
+  body main .formularioprincipal fieldset legend {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    color: #1B1464;
+    margin: 1rem; }
+  body main .formularioprincipal fieldset .form1, body main .formproyecto .formularioprincipal fieldset .form2, body main .formproyecto .formularioprincipal fieldset .form3, body main .formularioprincipal fieldset .form2, body main .formularioprincipal fieldset .form3 {
+    font-size: 1.3rem;
+    color: #1E58DE;
+    margin: 1rem 1rem 1rem 1rem; }
+    body main .formularioprincipal fieldset .form1 input, body main .formproyecto .formularioprincipal fieldset .form2 input, body main .formproyecto .formularioprincipal fieldset .form3 input, body main .formularioprincipal fieldset .form2 input, body main .formularioprincipal fieldset .form3 input {
+      border: 0.1rem solid #2365FF;
+      border-radius: 2rem;
+      height: 2rem;
+      width: 100%;
+      text-decoration: none;
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      padding-left: 1rem; }
+  body main .formularioprincipal fieldset .form2 input {
+    border: 0.1rem solid #2365FF;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    justify-content: space-between; }
+  body main .formularioprincipal fieldset .form3 textarea {
+    width: 100%;
+    height: 14rem;
+    box-sizing: border-box;
+    border: 0.1rem solid #2365FF;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 00.5rem 1rem 0.5rem 1rem; }
+  body main .formularioprincipal fieldset .form4 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #1E58DE;
+    margin: 1rem 1rem 1rem 1rem; }
+    body main .formularioprincipal fieldset .form4 label {
+      font-size: 1.2rem;
+      line-height: 1.4rem; }
+  body main .formularioprincipal fieldset .form5 {
+    margin: 1rem 1rem 1rem 1rem; }
+  body main .formularioprincipal fieldset input[type=reset] {
+    background-color: rgba(240, 248, 255, 0);
+    border: 0.1rem solid #1b146400;
+    color: #1B1464;
+    height: 2rem;
+    width: 8rem;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem; }
 
 /* INDEX */
 @media screen and (max-width: 1200px) {
@@ -301,7 +644,7 @@ body main {
     margin-left: 3rem;
     padding-top: 17rem; }
   header {
-    background-color: #abc3fc;
+    background-color: #c0d3fe;
     position: fixed;
     width: 100%;
     padding-top: 0rem;
@@ -332,11 +675,11 @@ body main {
     margin-left: 5.1rem; }
     .navbar-nav {
       align-items: flex-start;
-      --bs-navbar-color: #2365FF;
-      --bs-navbar-active-color: #1B1464;
+      --bs-navbar-color: map-get($color, terciario);
+      --bs-navbar-active-color: map-get($color, principal);
       font-size: 1rem; }
   .bg-light {
-    background-color: #abc3fc !important; }
+    background-color: #c0d3fe !important; }
     .bg-light .navbar-toggler {
       border-color: #1B1464; }
       .bg-light .navbar-toggler .navbar-toggler-icon {
@@ -386,3 +729,232 @@ body main {
     margin-right: 1rem;
     padding-top: 14rem;
     padding-bottom: 2rem; } }
+
+/* STORE */
+@media screen and (max-width: 1200px) {
+  .tipoproductos {
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 6vw;
+    grid-row-gap: 5vw; }
+    .tipoproductos p {
+      margin-top: 1vw;
+      margin-bottom: 2vw;
+      font-size: 1.5vw;
+      line-height: 2vw; } }
+
+@media screen and (max-width: 800px) {
+  .tipoproductos {
+    grid-row-gap: 3vw; }
+    .tipoproductos p {
+      font-size: 2vw;
+      line-height: 2.5vw; } }
+
+@media screen and (max-width: 600px) {
+  .mainstore h2 {
+    font-size: 8vw;
+    line-height: 8.5vw; }
+  .tipoproductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 5vw; }
+    .tipoproductos h3 {
+      font-size: 6vw;
+      line-height: 6.5vw; }
+    .tipoproductos p {
+      margin-top: 1vw;
+      margin-bottom: 2vw;
+      font-size: 3vw;
+      line-height: 4vw; }
+  .destacado {
+    font-size: 4vw; }
+  header div p {
+    display: none; }
+  .acordionstore .accordion-button {
+    font-size: 5vw;
+    line-height: 5.3vw; }
+  .acordionstore .accordion-collapse {
+    font-size: 3vw;
+    line-height: 3.3vw; }
+  .acordionstore .accordion h3 {
+    padding-top: 8vw;
+    font-size: 6vw;
+    line-height: 6.2vw; } }
+
+@media screen and (max-width: 400px) {
+  .destacado {
+    font-size: 6vw; }
+  .tipoproductos p {
+    font-size: 4vw;
+    line-height: 5vw; } }
+
+@media screen and (max-width: 300px) {
+  body header {
+    height: 10rem; }
+    body header div {
+      display: none; }
+  body main {
+    padding-top: 12rem; } }
+
+/* PROYECTO */
+@media screen and (max-width: 1200px) {
+  body main .mainproyecto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "imagen1 tituloproyecto tituloproyecto" "imagen1 sobreproyecto sobreproyecto" "imagen1 imagen2 imagen2";
+    padding-top: 4vw;
+    padding-bottom: 5vw; }
+    body main .mainproyecto .tituloproyecto {
+      font-size: 6vw;
+      line-height: 6.3vw; }
+    body main .mainproyecto .sobreproyecto {
+      font-size: 5vw;
+      line-height: 5.2vw; }
+      body main .mainproyecto .sobreproyecto h4 {
+        font-size: 3vw;
+        line-height: 3.3vw; }
+      body main .mainproyecto .sobreproyecto p {
+        font-size: 2vw;
+        line-height: 2.3vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw; } }
+
+@media screen and (max-width: 800px) {
+  body main .mainproyecto {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 0.5fr 4fr;
+    grid-template-areas: "imagen1 imagen1 imagen1" "tituloproyecto tituloproyecto tituloproyecto" "imagen2 sobreproyecto sobreproyecto"; } }
+
+@media screen and (max-width: 600px) {
+  body main .mainproyecto {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "imagen1" "tituloproyecto" "sobreproyecto" "imagen2";
+    row-gap: 8vw;
+    margin-top: 0rem; }
+    body main .mainproyecto .tituloproyecto {
+      font-size: 7vw;
+      line-height: 7.3vw; }
+    body main .mainproyecto .sobreproyecto h4 {
+      font-size: 4vw;
+      line-height: 4.3vw; }
+    body main .mainproyecto .sobreproyecto p {
+      font-size: 2.5vw;
+      line-height: 2.8vw;
+      margin-top: 2vw;
+      margin-bottom: 2vw; }
+  body main .formproyecto .formularioprincipal h3 {
+    font-size: 2rem;
+    line-height: 2.2rem; } }
+
+@media screen and (max-width: 400px) {
+  body main .mainproyecto .tituloproyecto {
+    font-size: 8vw;
+    line-height: 8.3vw; }
+  body main .mainproyecto .sobreproyecto h4 {
+    font-size: 5vw;
+    line-height: 5.3vw; }
+  body main .mainproyecto .sobreproyecto p {
+    font-size: 4vw;
+    line-height: 4.3vw; }
+  body main .formproyecto {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+    padding-top: 2rem; } }
+
+/* CONTACTO */
+@media screen and (max-width: 1200px) {
+  body main {
+    margin-bottom: 0px;
+    padding-bottom: 0px; }
+    body main .forms {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding-top: 2rem;
+      padding-bottom: 0px;
+      row-gap: 4vw; }
+    body main .formularioprincipal {
+      margin-bottom: 0px;
+      padding-bottom: 0px; }
+      body main .formularioprincipal fieldset {
+        width: auto;
+        margin-bottom: 0px;
+        border: 0rem; }
+        body main .formularioprincipal fieldset .form1 label, body main .formproyecto .formularioprincipal fieldset .form2 label, body main .formproyecto .formularioprincipal fieldset .form3 label, body main .formularioprincipal fieldset .form2 label, body main .formularioprincipal fieldset .form3 label {
+          font-size: 1.5rem; } }
+
+/* ARTWORKS */
+@media screen and (max-width: 800px) {
+  body main .bloqueartwork {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 6vw; }
+  body main .bloqueultimos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    row-gap: 4vw;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    align-items: stretch; }
+    body main .bloqueultimos div h4 {
+      font-size: 3vw; }
+    body main .bloqueultimos div p {
+      font-size: 2vw; }
+  body main .bloqueartwork {
+    padding: 3vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    column-gap: 5vw; }
+    body main .bloqueartwork p {
+      font-size: 2vw;
+      line-height: 2.3vw; } }
+
+@media screen and (max-width: 600px) {
+  body main .descripciontrabajosdestacados {
+    font-size: 4vw;
+    line-height: 4.3vw; }
+  body main .bloqueartwork p {
+    font-size: 2.4vw;
+    line-height: 2.9vw; }
+  body main .bloqueartwork div h5 {
+    font-size: 3vw;
+    line-height: 3.4vw; }
+  body main .tituloartwork2 {
+    font-size: 5vw;
+    line-height: 5.2vw;
+    padding-top: 5vw; }
+  body main .bloqueultimos {
+    margin-bottom: 12vw; }
+    body main .bloqueultimos div h4 {
+      font-size: 4vw;
+      line-height: 4.3vw; }
+    body main .bloqueultimos div p {
+      font-size: 3vw;
+      line-height: 3.2vw; } }
+
+@media screen and (max-width: 400px) {
+  body main .bloqueultimos div h4 {
+    font-size: 5vw;
+    line-height: 5.3vw; }
+  body main .bloqueultimos div p {
+    font-size: 4vw;
+    line-height: 4.2vw; }
+  body main .bloqueartwork p {
+    font-size: 3.4vw;
+    line-height: 3.9vw; }
+  body main .bloqueartwork div h5 {
+    font-size: 4vw;
+    line-height: 4.4vw; }
+  body main .descripciontrabajosdestacados {
+    font-size: 5vw;
+    line-height: 5.3vw; }
+  body main .tituloartwork2 {
+    font-size: 6vw;
+    line-height: 6.2vw;
+    padding-top: 5vw; } }

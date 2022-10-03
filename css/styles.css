@@ -1,21 +1,21 @@
 
 /* Reset CSS */
-* {
+/* * {
     Margin:0;
     padding:0;
-}
+} */
 
 /* Setear tamaño rem=10px (aprox) */
-html{
+/* html{
     font-size: 62,5%
 }
 
 body{
     font-family: 'Poppins', sans-serif;
 }
-
+ */
 /* Header */
-    header{
+/*     header{
     background-color: whitesmoke;
     height: 14rem;
     display: flex;
@@ -64,10 +64,10 @@ body{
     
     .navbar{
         display: none;
-    }
+    } */
 
     /* MENU NAVEGACIÓN */
-    nav{
+   /*  nav{
         position: fixed;
 
         -webkit-transform: rotate(-90deg);  
@@ -96,9 +96,9 @@ body{
         text-decoration: none;
         color: #2365FF;
     }
-
+ */
 /* MAIN */
-main{
+/* main{
     margin-right: 7rem;
     margin-left:11rem;
     caret-color: #1E58DE;
@@ -106,9 +106,9 @@ main{
 
 main section{
     display: flex;
-}
+} */
      /* Fonts styles */
-    h1{
+    /* h1{
         font-size: 10vw;
         line-height: 10vw;
         color: #1B1464;
@@ -184,10 +184,10 @@ main section{
         width: 4rem;
         height: 0.2rem;
     }
-
+ */
 
 /* INPUT Newsletter */
-.newsletter{
+/* .newsletter{
     font-size: 1.5rem;
     color: #1E58DE;
 }
@@ -215,9 +215,9 @@ input[type=email]{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
-
+ */
 /* FOOTER */
-footer{
+/* footer{
     background-color: #1B1464;
     padding-top: 8vw;
     padding-bottom: 8vw;
@@ -257,12 +257,12 @@ footer section img{
     grid-template-columns: auto 2fr;
     align-self: center;
     align-items: center;
-}
+} */
 
 
 /* STORE */
 
-main h1{
+/* main h1{
     margin-top: 5vw;
 }
 
@@ -334,10 +334,12 @@ main h1{
 
 .comosehacen p{
     font-weight: 400;
-}
+} */
+
+
 
 /* PROYECTO */
-.mainproyecto{
+/* .mainproyecto{
     margin-top: 2rem;
     margin-bottom: 4rem;
     display: grid;
@@ -351,9 +353,6 @@ main h1{
 
     grid-column-gap: 2rem;
     grid-row-gap: 3rem;
-
-/*     justify-content: space-between;
-    align-items: center; */
 }
 
 .imagenproyecto1{
@@ -391,9 +390,10 @@ main h1{
     padding-top: 2rem;
 }
 
+ */
 
 /* CONTACTO */
-
+/* 
 .forms{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -502,10 +502,10 @@ input[type=reset]{
 
 .forms iframe{
     padding-top: 3rem;
-}
+} */
 
 /* ARTWORK */
-.bloqueartwork{
+/* .bloqueartwork{
     padding: 3rem;
     margin-top: 2rem;
     column-gap: 5rem;
@@ -572,7 +572,7 @@ input[type=reset]{
 #galeria .col-lg-3{
     padding-bottom: 2rem;
 
-}
+} */
 
 
 
@@ -759,7 +759,7 @@ input[type=reset]{
 
 
 /* RESPONSIVE STORE*/
-
+/* 
 @media screen and (max-width: 1200px){
     .tipoproductos{
         margin-top: 5vw;
@@ -808,9 +808,9 @@ input[type=reset]{
     header div p{
         display: none;
     }
-
+ */
     /* ESTILOS MENÚ HAMBURGUESA */
-    .navbar{
+/*     .navbar{
         display: block;
         position: fixed;
 
@@ -839,8 +839,8 @@ input[type=reset]{
         --bs-navbar-active-color: #1B1464;
         font-size: 1rem;
     } 
-}
-
+} */
+/* 
 @media screen and (max-width: 400px){
     .destacado{
         font-size: 6vw;
@@ -865,11 +865,11 @@ input[type=reset]{
         padding-top: 11rem;
     }
 }
-
+ */
 
 
 /* RESPONSIVE ARTWORK*/
-
+/* 
 @media screen and (max-width: 800px){
     .bloqueartwork {
         display: grid;
@@ -961,11 +961,11 @@ input[type=reset]{
         padding-top: 5vw;
     }
 }
+ */
 
-
-
+ 
 /* RESPONSIVE PROYECTO */
-
+/* 
 @media screen and (max-width: 1200px){
     .mainproyecto {
         margin-top: 2vw;
@@ -1074,13 +1074,13 @@ input[type=reset]{
         padding-bottom: 3rem;
     }
 }
-
+ */
 
 
 /* RESPONSIVE CONTACTO */
 
 @media screen and (max-width: 1200px){
-    .forms{
+ /*    .forms{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         padding-top: 4rem;
@@ -1116,7 +1116,7 @@ input[type=reset]{
         font-size:5vw;
     }
 }
-
+ */
 
 
 /* ANIMACIONES*/
@@ -1152,7 +1152,7 @@ li a:hover{
     padding-right: 1vw;
 }
  */
-.tipoproductos a{
+/* .tipoproductos a{
     height: 100%;
     width: 100%;
     transition: 1s;
@@ -1163,24 +1163,24 @@ li a:hover{
     height: fit-content;
     width: fit-content;
     font-size: 120%;
-}
+} */
 
-p a:hover{
+/* p a:hover{
     color: #1B1464;
     font-weight: 500;
 }
-
-.logo{
+ */
+/* .logo{
     transition: 2s;
 }
 .logo:hover{
     transform: scale(1.1,1.1);
-}
+} */
 
-#galeria img{
+/* #galeria img{
     transition: 1s;
 }
 
 #galeria img:hover{
     transform: scale(1.2,1.2);
-}
+} */

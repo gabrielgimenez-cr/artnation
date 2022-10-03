@@ -1,0 +1,84 @@
+body main{
+
+    .tituloartwork{
+        margin-bottom: 1rem;
+    }
+
+    .descripciontrabajosdestacados{
+        font-weight: 400;
+    }
+
+    .bloqueartwork{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 3rem;
+        margin-top: 2rem;
+        column-gap: 5rem;
+        background-color: map-get($color, fondo);
+
+        h5{
+            font-weight: 500;
+        }
+
+        img{
+            width: 100%;
+            margin-top: 1vw;
+            margin-bottom: 1vw;
+            transition: 1s;
+
+            &:hover{
+                transform: scale(1.2,1.2);
+            }
+        }
+
+        p{
+            font-size: 1.5vw;
+            line-height: 1.8vw;
+        }
+    }
+
+    .tituloartwork2{
+        margin-top: 7vw;
+    }
+
+    .bloqueultimos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom:7rem;
+        column-gap: 5vw;
+
+        img{
+            width: 100%;
+        }
+        div {
+            p{
+                font-size: 2vw;
+            }
+
+            h4{
+                font-size: 3vw;
+                line-height: 3.2vw;
+                padding-bottom: 1.5vw;
+            }
+        }
+    }
+
+    #galeria{
+        padding: 0px;
+        padding-bottom: 3rem;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .col-lg-3{
+            padding-bottom: 2rem;
+        }
+    }
+}
+

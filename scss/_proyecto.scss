@@ -1,0 +1,147 @@
+body main{
+    padding-bottom: 0px;
+
+    .mainproyecto{
+        margin-bottom: 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imagen1 tituloproyecto tituloproyecto"
+        "sobreproyecto imagen2 imagen2";
+        grid-column-gap: 2rem;
+        grid-row-gap: 3rem;
+
+        .imagenproyecto1{
+            grid-area: imagen1;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .tituloproyecto{
+            grid-area: tituloproyecto;
+            margin:0%;
+        }
+
+        .sobreproyecto{
+            grid-area: sobreproyecto;
+            background-color:map-get($color,fondo);
+            padding: 1.3rem;
+        }
+
+        .imagenproyecto2{
+            @extend .imagenproyecto1;
+            grid-area: imagen2;
+        }
+    }
+
+    .formproyecto{ 
+        padding-bottom: 6rem;
+        background-color:map-get($color, fondo);
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 2rem;
+
+        .formularioprincipal{
+
+            input[type=submit]{
+                background-color: rgba(240, 248, 255, 0);
+                border: 0.1rem solid;
+                color:map-get($color,secundario);
+                height:2rem;
+                width:5rem;
+                text-decoration: none;
+                font-family: 'Poppins', sans-serif;
+                font-size:1rem; 
+                transition: 1s;
+
+                &:hover{
+                    border-radius: 1rem;
+                }
+            }
+
+            label{
+                font-size: 1.5rem;
+                color: map-get($color, secundario);
+            }
+
+                .form1{
+                    font-size: 1.3rem;
+                    color: map-get($color, secundario);
+                    margin: 1rem 1rem 1rem 1rem;
+
+                    input{
+                        border: 0.1rem solid map-get($color, terciario);
+                        border-radius: 2rem;
+                        height: 2rem;
+                        width: 100%;
+                        text-decoration: none;
+                        cursor: pointer;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 1rem;
+                        padding-left: 1rem;
+                    }
+                }
+
+                .form2{
+                    @extend .form1;
+
+                    input{
+                        border: 0.1rem solid map-get($color, terciario);
+                        border-radius: 2rem;
+                        height: 2rem;
+                        width: 100%;
+                        text-decoration: none;
+                        cursor: pointer;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 1rem;
+                        justify-content:space-between ;
+                    }
+                }
+
+                .form3{
+                    @extend .form1;
+                    textarea{
+                        width: 100%;
+                        height: 14rem;
+                        box-sizing: border-box;
+                        border: 0.1rem solid map-get($color, terciario);
+                        border-radius: 1rem;
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 1rem;
+                        padding: 00.5rem 1rem 0.5rem 1rem;
+                    }
+                }
+
+                .form4{
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1rem;
+                    color: map-get($color, secundario);
+                    margin: 1rem 1rem 1rem 1rem;
+
+                    label{
+                        font-size: 1.2rem;
+                        line-height: 1.4rem;
+                    }
+                }
+
+                .form5{
+                    margin: 1rem 1rem 1rem 1rem;
+                }
+
+                input[type=reset]{
+                    background-color: rgba(240, 248, 255, 0);
+                    border: 0.1rem solid #1b146400;
+                    color:map-get($color, principal);
+                    height: 2rem;
+                    width: 8rem;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }

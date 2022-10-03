@@ -29,7 +29,7 @@ $color:(
     principal: #1B1464,
     secundario: #1E58DE,
     terciario: #2365FF,
-    fondo:#abc3fc
+    fondo:#c0d3fe
 );
 
 
@@ -65,37 +65,4 @@ p{
     @include texto(1rem, 1.25rem, 300, map-get($color, principal));
 }
 
-
-/* ESTILOS MENÚ HAMBURGUESA */
-.navbar{
-    display: block;
-    position: fixed;
-
-    -webkit-transform: rotate(0deg);  
-    -moz-transform: rotate(0deg);  
-    -ms-transform: rotate(0deg);  
-    -o-transform: rotate(0deg);  
-    transform: rotate(0deg);  
-
-    margin-top: 5rem;
-    margin-left: 7rem;
-
-    &-nav{
-        align-items: flex-start;
-        --bs-navbar-color: #2365FF;
-        --bs-navbar-active-color: #1B1464;
-        font-size: 1rem;
-    } 
-}
-
-.bg-light {
-    background-color: #abc3fc !important;
-        .navbar-toggler {
-            border-color: #1B1464;
-        
-            .navbar-toggler-icon {
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(35,101,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-            }
-        }
-}
 

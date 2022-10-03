@@ -148,16 +148,16 @@
     
         &-nav{
             align-items: flex-start;
-            --bs-navbar-color: #2365FF;
-            --bs-navbar-active-color: #1B1464;
+            --bs-navbar-color: map-get($color, terciario);
+            --bs-navbar-active-color: map-get($color, principal);
             font-size: 1rem;
         } 
     }
     
     .bg-light {
-        background-color: #abc3fc !important;
+        background-color: map-get($color, fondo) !important;
             .navbar-toggler {
-                border-color: #1B1464;
+                border-color: map-get($color, principal);
             
                 .navbar-toggler-icon {
                     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(35,101,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -237,4 +237,410 @@
 }
 
 
+/* STORE */
+@media screen and (max-width: 1200px){
+    .tipoproductos{
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-column-gap: 6vw;
+        grid-row-gap: 5vw;
+    
+        p{
+            margin-top: 1vw;
+            margin-bottom: 2vw;
+            font-size: 1.5vw;
+            line-height: 2vw;
+        }
+    }
+}
 
+
+@media screen and (max-width: 800px){
+    .tipoproductos{
+        grid-row-gap: 3vw;
+        p{
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .mainstore h2{
+        font-size: 8vw;
+        line-height: 8.5vw;
+    }
+
+    .tipoproductos{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 5vw;
+
+        h3{
+            font-size: 6vw;
+            line-height: 6.5vw;
+        }
+        p{
+            margin-top: 1vw;
+            margin-bottom: 2vw;
+            font-size: 3vw;
+            line-height: 4vw;
+        }
+    }
+
+    .destacado{
+        font-size: 4vw;
+    }
+
+    header div p{
+        display: none;
+    }
+
+    .acordionstore{
+
+        .accordion {
+            &-button{
+                font-size: 5vw;
+                line-height: 5.3vw;
+            }
+
+            &-collapse{
+                font-size: 3vw;
+                line-height: 3.3vw;
+            }
+
+            h3{
+                padding-top: 8vw;
+                font-size: 6vw;
+                line-height: 6.2vw;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .destacado{
+        font-size: 6vw;
+    }
+
+    .tipoproductos p{
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+}
+
+
+@media screen and (max-width: 300px){
+    body{
+        header{
+            height: 10rem;
+
+            div{
+                display: none;
+            }
+        }
+
+        main{
+            padding-top: 12rem;
+        }
+    }
+}
+
+
+
+/* PROYECTO */
+@media screen and (max-width: 1200px){
+    body main{ 
+        .mainproyecto {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            grid-template-areas: 
+            "imagen1 tituloproyecto tituloproyecto"
+            "imagen1 sobreproyecto sobreproyecto"
+            "imagen1 imagen2 imagen2";
+            padding-top: 4vw;
+            padding-bottom: 5vw;
+
+            .tituloproyecto{
+                font-size: 6vw;
+                line-height: 6.3vw;
+            }
+
+            .sobreproyecto{
+                font-size: 5vw;
+                line-height: 5.2vw;
+
+                h4{
+                    font-size: 3vw;
+                    line-height: 3.3vw;
+                }
+
+                p{
+                    font-size: 2vw;
+                    line-height: 2.3vw;
+                    margin-top: 2vw;
+                    margin-bottom: 2vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    body main{
+
+        .mainproyecto {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 3fr 0.5fr 4fr;
+            grid-template-areas: 
+            "imagen1 imagen1 imagen1"
+            "tituloproyecto tituloproyecto tituloproyecto"
+            "imagen2 sobreproyecto sobreproyecto";
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    body main{ 
+        .mainproyecto {
+            grid-template-columns: 1fr;
+            grid-template-rows:auto;
+            grid-template-areas: 
+            "imagen1"
+            "tituloproyecto"
+            "sobreproyecto"
+            "imagen2";
+            row-gap: 8vw;
+            margin-top: 0rem;
+        
+            .tituloproyecto{
+                font-size: 7vw;
+                line-height: 7.3vw;
+            }
+            
+            .sobreproyecto{ 
+                h4{
+                    font-size: 4vw;
+                    line-height: 4.3vw;
+                }
+
+                p{
+                    font-size: 2.5vw;
+                    line-height: 2.8vw;
+                    margin-top: 2vw;
+                    margin-bottom: 2vw;
+                }
+            }
+        }
+
+        .formproyecto .formularioprincipal{
+            h3{
+                font-size: 2rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    body main{
+        .mainproyecto {
+        
+            .tituloproyecto{
+                font-size: 8vw;
+                line-height: 8.3vw;
+            }
+            
+            .sobreproyecto{
+                h4{
+                    font-size: 5vw;
+                    line-height: 5.3vw;
+                }
+
+                p{
+                    font-size: 4vw;
+                    line-height: 4.3vw;
+                }
+            }
+        }
+
+        .formproyecto{ 
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 4rem;
+            padding-top: 2rem;
+        }
+    }
+}
+
+
+
+/* CONTACTO */
+
+@media screen and (max-width: 1200px){
+    body main{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+
+        .forms{
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            padding-top: 2rem;
+            padding-bottom: 0px;
+            row-gap: 4vw;
+        }
+        
+        .formularioprincipal{ 
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+
+            fieldset{
+                width: auto;
+                margin-bottom: 0px;
+                border: 0rem;
+
+                .form1 label{
+                    font-size:1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* ARTWORKS */
+@media screen and (max-width: 800px){
+    body main{
+        .bloqueartwork {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 6vw;
+        }
+
+        .bloqueultimos{
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 1fr;
+            row-gap: 4vw;
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+            align-items: stretch;
+
+            div{
+                h4{
+                    font-size: 3vw;
+                }
+                p{
+                    font-size: 2vw;
+                }
+            }
+        }
+
+        
+        .bloqueartwork{
+            padding: 3vw;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+            column-gap: 5vw;
+
+            p{
+                font-size: 2vw;
+                line-height: 2.3vw;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    body main{ 
+        .descripciontrabajosdestacados{
+            font-size: 4vw;
+            line-height: 4.3vw;
+        }
+
+        .bloqueartwork{
+            p{
+                font-size: 2.4vw;
+                line-height: 2.9vw;
+            }
+
+            div{ 
+                h5{
+                    font-size: 3vw;
+                    line-height: 3.4vw;
+                }
+            }
+        }
+
+        .tituloartwork2{
+            font-size: 5vw;
+            line-height: 5.2vw;
+            padding-top: 5vw;
+        }
+
+        .bloqueultimos{
+            margin-bottom: 12vw;
+
+            div{
+                h4{
+                    font-size: 4vw;
+                    line-height: 4.3vw;
+                    }
+                p{
+                    font-size: 3vw;
+                    line-height: 3.2vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    body main{ 
+        .bloqueultimos{
+            div{  
+                h4{
+                    font-size: 5vw;
+                    line-height: 5.3vw;
+                }
+
+                p{
+                    font-size: 4vw;
+                    line-height: 4.2vw;
+                }
+            }
+        }
+
+        .bloqueartwork p{
+            font-size: 3.4vw;
+            line-height: 3.9vw;
+        }
+        
+        .bloqueartwork div h5{
+            font-size: 4vw;
+            line-height: 4.4vw;
+            }
+
+        .descripciontrabajosdestacados{
+            font-size: 5vw;
+            line-height: 5.3vw;
+        }
+
+        .tituloartwork2{
+            font-size: 6vw;
+            line-height: 6.2vw;
+            padding-top: 5vw;
+        }
+    }
+}
