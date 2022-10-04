@@ -1,4 +1,12 @@
 body main{
+    .titulocontacto{
+        b{
+            color: transparent;
+            background: url(../media/jpg/imagen1.jpg);
+            -webkit-background-clip: text;
+        }
+    }
+
     .forms{
         display: grid;
         grid-template-columns: 1fr 1fr;

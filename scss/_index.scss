@@ -27,6 +27,7 @@ body {
 }
 
 .mainprincipal{
+    padding-bottom: 5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1 fr 1fr;
@@ -39,20 +40,27 @@ body {
     .seccionprincipal1{
         grid-area: principal;
 
-        div a{
-            margin-top: 1vw;
-            font-size: 3vw;
-            line-height: 3vw;
-            text-decoration: none;
-            transition: 0.5s;
+        div{
+            h1 b{
+                color: transparent;
+                background: url(../media/jpg/imagen1.jpg);
+                -webkit-background-clip: text;
+            }
+            a{
+                margin-top: 1vw;
+                font-size: 3vw;
+                line-height: 3vw;
+                text-decoration: none;
+                transition: 0.5s;
 
-            &:hover{
-                color:map-get($color, terciario);
-                border-radius: 2rem;
-                height: fit-content;
-                width: fit-content;
-                padding-left: 1vw;
-                padding-right: 1vw;
+                &:hover{
+                    color:map-get($color, terciario);
+                    border-radius: 2rem;
+                    height: fit-content;
+                    width: fit-content;
+                    padding-left: 1vw;
+                    padding-right: 1vw;
+                }
             }
         }
 

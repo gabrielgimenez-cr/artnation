@@ -181,6 +181,7 @@ body {
     background-position: 0% 50%; } }
 
 .mainprincipal {
+  padding-bottom: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1 fr 1fr;
@@ -189,6 +190,10 @@ body {
   column-gap: 4vw; }
   .mainprincipal .seccionprincipal1 {
     grid-area: principal; }
+    .mainprincipal .seccionprincipal1 div h1 b {
+      color: transparent;
+      background: url(../media/jpg/imagen1.jpg);
+      -webkit-background-clip: text; }
     .mainprincipal .seccionprincipal1 div a {
       margin-top: 1vw;
       font-size: 3vw;
@@ -329,7 +334,7 @@ body main .bloqueartwork {
     margin-bottom: 1vw;
     transition: 1s; }
     body main .bloqueartwork img:hover {
-      transform: scale(1.2, 1.2); }
+      transform: scale(1.05, 1.05); }
   body main .bloqueartwork p {
     font-size: 1.5vw;
     line-height: 1.8vw; }
@@ -346,7 +351,10 @@ body main .bloqueultimos {
   margin-bottom: 7rem;
   column-gap: 5vw; }
   body main .bloqueultimos img {
-    width: 100%; }
+    width: 100%;
+    transition: 1s; }
+    body main .bloqueultimos img:hover {
+      transform: scale(1.05, 1.05); }
   body main .bloqueultimos div p {
     font-size: 2vw; }
   body main .bloqueultimos div h4 {
@@ -359,7 +367,10 @@ body main #galeria {
   padding-bottom: 3rem; }
   body main #galeria img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    transition: 1s; }
+    body main #galeria img:hover {
+      transform: scale(1.05, 1.05); }
   body main #galeria .col-lg-3 {
     padding-bottom: 2rem; }
 
@@ -462,6 +473,11 @@ body main {
       cursor: pointer;
       font-family: 'Poppins', sans-serif;
       font-size: 1rem; }
+
+body main .titulocontacto b {
+  color: transparent;
+  background: url(../media/jpg/imagen1.jpg);
+  -webkit-background-clip: text; }
 
 body main .forms {
   display: grid;
@@ -630,6 +646,8 @@ body main .formularioprincipal fieldset {
     .mainprincipal .newsletterindex {
       margin-top: 2rem;
       margin-bottom: 3rem; }
+    .mainprincipal .carruselindex2 {
+      margin-bottom: 10vw; }
   footer section {
     margin-left: 8rem;
     display: grid;
