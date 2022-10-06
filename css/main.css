@@ -53,6 +53,20 @@ p {
   font-weight: 300;
   color: #1B1464; }
 
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4vw);
+    height: var(--size, 4vw); }
+  100% {
+    width: 0rem;
+    height: 0rem; } }
+
+@keyframes bubble-move {
+  0% {
+    bottom: -4vw; }
+  100% {
+    bottom: var(--distance, 10vw); } }
+
 header {
   background-color: rgba(255, 255, 255, 0.3);
   height: 14rem;
@@ -134,10 +148,34 @@ nav {
 
 footer {
   background-color: #1B1464;
-  padding-top: 8vw;
+  margin-top: 5vw;
   padding-bottom: 5vw;
   position: relative;
   z-index: 100; }
+  footer .footer {
+    z-index: -1;
+    --footer-background:#1B1464;
+    display: grid;
+    position: relative;
+    grid-area: footer;
+    min-height: 6vw;
+    margin-left: 4vw;
+    margin-right: 10vw; }
+    footer .footer .bubbles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1vw;
+      background: var(--footer-background);
+      filter: url("#blob"); }
+      footer .footer .bubbles .bubble {
+        position: absolute;
+        left: var(--position, 50%);
+        background: var(--footer-background);
+        border-radius: 100%;
+        animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+        transform: translate(-50%, 100%); }
   footer section {
     padding-right: 7rem;
     margin-left: 11rem;
@@ -648,16 +686,20 @@ body main .formularioprincipal fieldset {
       margin-bottom: 3rem; }
     .mainprincipal .carruselindex2 {
       margin-bottom: 10vw; }
-  footer section {
-    margin-left: 8rem;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1rem; }
-    footer section .logofooter {
-      display: none; } }
+  footer {
+    padding-top: 8vw; }
+    footer .footer {
+      display: none; }
+    footer section {
+      margin-left: 8rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      row-gap: 1rem; }
+      footer section .logofooter {
+        display: none; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) and (max-width: 600px) {
   body main {
     margin-left: 3rem;
     padding-top: 17rem; }
@@ -713,7 +755,7 @@ body main .formularioprincipal fieldset {
     footer section .redes {
       height: 1.8rem; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) and (max-width: 400px) {
   body main {
     margin-left: 2rem;
     margin-right: 2rem;
@@ -737,7 +779,7 @@ body main .formularioprincipal fieldset {
     margin-right: 2rem;
     margin-left: 2rem; } }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 800px) and (max-width: 300px) {
   header {
     height: 12rem; }
     header div img {
@@ -748,8 +790,10 @@ body main .formularioprincipal fieldset {
     padding-top: 14rem;
     padding-bottom: 2rem; } }
 
-/* STORE */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+  /* STORE */ }
+
+@media screen and (max-width: 800px) and (max-width: 1200px) {
   .tipoproductos {
     margin-top: 5vw;
     margin-bottom: 10vw;
@@ -764,14 +808,14 @@ body main .formularioprincipal fieldset {
       font-size: 1.5vw;
       line-height: 2vw; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (max-width: 800px) {
   .tipoproductos {
     grid-row-gap: 3vw; }
     .tipoproductos p {
       font-size: 2vw;
       line-height: 2.5vw; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) and (max-width: 600px) {
   .mainstore h2 {
     font-size: 8vw;
     line-height: 8.5vw; }
@@ -803,14 +847,14 @@ body main .formularioprincipal fieldset {
     font-size: 6vw;
     line-height: 6.2vw; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) and (max-width: 400px) {
   .destacado {
     font-size: 6vw; }
   .tipoproductos p {
     font-size: 4vw;
     line-height: 5vw; } }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 800px) and (max-width: 300px) {
   body header {
     height: 10rem; }
     body header div {
@@ -818,8 +862,10 @@ body main .formularioprincipal fieldset {
   body main {
     padding-top: 12rem; } }
 
-/* PROYECTO */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+  /* PROYECTO */ }
+
+@media screen and (max-width: 800px) and (max-width: 1200px) {
   body main .mainproyecto {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
@@ -841,13 +887,13 @@ body main .formularioprincipal fieldset {
         margin-top: 2vw;
         margin-bottom: 2vw; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (max-width: 800px) {
   body main .mainproyecto {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr 0.5fr 4fr;
     grid-template-areas: "imagen1 imagen1 imagen1" "tituloproyecto tituloproyecto tituloproyecto" "imagen2 sobreproyecto sobreproyecto"; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) and (max-width: 600px) {
   body main .mainproyecto {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -869,7 +915,7 @@ body main .formularioprincipal fieldset {
     font-size: 2rem;
     line-height: 2.2rem; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) and (max-width: 400px) {
   body main .mainproyecto .tituloproyecto {
     font-size: 8vw;
     line-height: 8.3vw; }
@@ -885,8 +931,10 @@ body main .formularioprincipal fieldset {
     padding-bottom: 4rem;
     padding-top: 2rem; } }
 
-/* CONTACTO */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
+  /* CONTACTO */ }
+
+@media screen and (max-width: 800px) and (max-width: 1200px) {
   body main {
     margin-bottom: 0px;
     padding-bottom: 0px; }
@@ -906,8 +954,18 @@ body main .formularioprincipal fieldset {
         body main .formularioprincipal fieldset .form1 label, body main .formproyecto .formularioprincipal fieldset .form2 label, body main .formproyecto .formularioprincipal fieldset .form3 label, body main .formularioprincipal fieldset .form2 label, body main .formularioprincipal fieldset .form3 label {
           font-size: 1.5rem; } }
 
-/* ARTWORKS */
+@media screen and (max-width: 800px) and (max-width: 800px) {
+  .formularioprincipal fieldset div label {
+    font-size: 4vw; } }
+
+@media screen and (max-width: 800px) and (max-width: 400px) {
+  .formularioprincipal fieldset div label {
+    font-size: 5vw; } }
+
 @media screen and (max-width: 800px) {
+  /* ARTWORKS */ }
+
+@media screen and (max-width: 800px) and (max-width: 800px) {
   body main .bloqueartwork {
     display: grid;
     grid-template-columns: 1fr;
@@ -933,7 +991,7 @@ body main .formularioprincipal fieldset {
       font-size: 2vw;
       line-height: 2.3vw; } }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) and (max-width: 600px) {
   body main .descripciontrabajosdestacados {
     font-size: 4vw;
     line-height: 4.3vw; }
@@ -956,7 +1014,7 @@ body main .formularioprincipal fieldset {
       font-size: 3vw;
       line-height: 3.2vw; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) and (max-width: 400px) {
   body main .bloqueultimos div h4 {
     font-size: 5vw;
     line-height: 5.3vw; }

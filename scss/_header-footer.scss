@@ -115,10 +115,41 @@ nav{
 
 footer{
     background-color: map-get($color, principal );
-    padding-top: 8vw;
+    margin-top: 5vw;
     padding-bottom: 5vw;
     position: relative;
     z-index:100;
+
+    .footer {
+        z-index: -1;
+        --footer-background:#1B1464;
+        display:grid;
+        position: relative;
+        grid-area: footer;
+        min-height:6vw;
+        margin-left: 4vw;
+        margin-right: 10vw;
+
+        .bubbles {
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            height:1vw;
+            background:var(--footer-background);
+            filter:url("#blob");
+
+            .bubble {
+                position: absolute;
+                left:var(--position, 50%);
+                background:var(--footer-background);
+                border-radius:100%;
+                animation:bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s),
+                    bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+                transform:translate(-50%, 100%);
+            }
+        }
+    }
 
     section{
         padding-right: 7rem;
@@ -151,3 +182,4 @@ footer{
         }
     }
 }
+

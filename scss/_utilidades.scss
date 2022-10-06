@@ -66,3 +66,21 @@ p{
 }
 
 
+@keyframes bubble-size {
+    0%, 75% {
+        width:var(--size, 4vw);
+        height:var(--size, 4vw);
+    }
+    100% {
+        width:0rem;
+        height:0rem;
+    }
+    }
+    @keyframes bubble-move {
+    0% {
+        bottom:-4vw;
+    }
+    100% {
+        bottom:var(--distance, 10vw);
+    }
+    }

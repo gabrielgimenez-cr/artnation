@@ -1,7 +1,7 @@
 {
-  "name": "root",
+  "name": "Art Nation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Art Nation es un proyecto artístico, experimental e independiente que explora nuevos universos e historial a través de la técnica collage. Gabriel Gimenez 2022 © Todos los derechos reservados",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

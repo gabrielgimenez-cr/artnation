@@ -88,18 +88,25 @@
 
     }
 
-    footer section{
-        margin-left: 8rem;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        row-gap: 1rem;
+    footer{
+        padding-top: 8vw;
 
-        .logofooter{
+        .footer{
             display: none;
         }
+
+        section{
+            margin-left: 8rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 1rem;
+
+            .logofooter{
+                display: none;
+            }
+        }
     }
-}
 
 @media screen and (max-width: 600px){
 
@@ -521,6 +528,17 @@
     }
 }
 
+@media screen and (max-width: 800px){
+    .formularioprincipal fieldset div label{
+        font-size:4vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .formularioprincipal fieldset div label{
+        font-size:5vw;
+    }
+}
 
 
 /* ARTWORKS */
@@ -648,4 +666,5 @@
             padding-top: 5vw;
         }
     }
+}
 }
