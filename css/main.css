@@ -78,7 +78,10 @@ header {
     transition: 2s; }
     header .logo:hover {
       transform: scale(1.1, 1.1);
-      background-image: url(../media/gif/efecto.gif); }
+      background-image: url(../media/gif/efecto.gif);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
   header p {
     margin-left: 11rem;
     color: #1B1464;

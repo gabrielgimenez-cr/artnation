@@ -13,6 +13,9 @@ header{
         &:hover{
             transform: scale(1.1,1.1);
             background-image: url(../media/gif/efecto.gif);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
         }
     }
 
