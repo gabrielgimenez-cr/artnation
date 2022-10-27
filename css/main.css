@@ -233,7 +233,10 @@ body {
     grid-area: principal; }
     .mainprincipal .seccionprincipal1 div h1 b {
       color: transparent;
-      background: url(../media/jpg/imagen1.jpg);
+      background: url(../media/gif/fondotexto2.gif);
+      background-size: contain;
+      background-position: center;
+      background-repeat: repeat-x;
       -webkit-background-clip: text; }
     .mainprincipal .seccionprincipal1 div a {
       margin-top: 1vw;
@@ -421,7 +424,7 @@ body main {
     margin-bottom: 4rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr;
     grid-template-areas: "imagen1 tituloproyecto tituloproyecto" "sobreproyecto imagen2 imagen2";
     grid-column-gap: 2rem;
     grid-row-gap: 3rem; }
@@ -517,7 +520,10 @@ body main {
 
 body main .titulocontacto b {
   color: transparent;
-  background: url(../media/jpg/imagen1.jpg);
+  background: url(../media/gif/fondotexto1.gif);
+  background-size: contain;
+  background-position: top;
+  background-repeat: repeat-x;
   -webkit-background-clip: text; }
 
 body main .forms {
@@ -900,8 +906,8 @@ body main .formularioprincipal fieldset {
   body main .mainproyecto {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "imagen1" "tituloproyecto" "sobreproyecto" "imagen2";
-    row-gap: 8vw;
+    grid-template-areas: "tituloproyecto" "imagen1" "sobreproyecto" "imagen2";
+    row-gap: 3vw;
     margin-top: 0rem; }
     body main .mainproyecto .tituloproyecto {
       font-size: 7vw;

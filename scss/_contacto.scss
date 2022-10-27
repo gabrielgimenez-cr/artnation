@@ -2,7 +2,10 @@ body main{
     .titulocontacto{
         b{
             color: transparent;
-            background: url(../media/jpg/imagen1.jpg);
+            background: url(../media/gif/fondotexto1.gif);
+            background-size: contain;
+            background-position: top;
+            background-repeat: repeat-x;
             -webkit-background-clip: text;
         }
     }
